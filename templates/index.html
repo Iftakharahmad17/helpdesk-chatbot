@@ -1,0 +1,37 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Helpdesk Chatbot — Iftakhar Ahmad</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <span class="logo">🤖</span>
+      <div>
+        <div class="title">Helpdesk Chatbot</div>
+        <div class="subtitle">by <strong>Iftakhar Ahmad</strong> — AI & Python Developer</div>
+      </div>
+    </div>
+    <button id="themeToggle" title="Toggle theme" aria-label="Toggle theme">🌙</button>
+  </header>
+
+  <main class="container">
+    <div id="chatWindow" class="chat-window"></div>
+    <div class="composer">
+      <input id="msgInput" type="text" placeholder="Type your message and press Enter…" autocomplete="off" />
+      <button id="sendBtn" class="primary">Send</button>
+    </div>
+  </main>
+
+  <footer class="app-footer">
+    <span>Built with Flask + Transformers (distilgpt2). Dark/Light mode supported.</span>
+    <a href="https://github.com/Iftakharahmad17" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/iftakhar-ahmad-6a4b9a295" target="_blank" rel="noopener">LinkedIn</a>
+  </footer>
+</body>
+</html>
